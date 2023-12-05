@@ -5,7 +5,7 @@ Tasty Palette Around Manila is web application that allows users to create and p
 # Features
 **Home Page**: Displays lists of food review posts with the User's name, Name of the restaurant, Date Posted, Rating, How many likes and Comment. Users can like and comment to their posts. 
 
-**Sort Page** : Shows the sorted food reviews by date can either be ascending or descending. 
+**Sort Page** : Shows the sorted food reviews by date and rating can either be ascending or descending. 
 
 **Create Post Page** : Enables users to create and publish their own food review. Users can enter a restaurant name, upload an image, main text description of the post, rate and date will be published.
 
