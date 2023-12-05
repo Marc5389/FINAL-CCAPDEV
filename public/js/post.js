@@ -16,7 +16,7 @@ const postSchema = new mongoose.Schema({
     username: String,
     comments: [commentSchema], // Embedding comments directly within the post schema
     likes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
-    likeCount: { type: Number, default: 10 }
+    likeCount: { type: Number, default: 0 }
     
 });
 
