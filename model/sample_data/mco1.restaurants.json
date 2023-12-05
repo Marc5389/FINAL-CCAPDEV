@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "654e037929ba1b216fd90bd4"
+  },
+  "name": "Angkong Dimsum",
+  "cuisine": "Chinese",
+  "location": "1241 Asturias street 1015 Manila, Philippines",
+  "lowest-price": 70,
+  "highest-price": 75,
+  "rating": 4.6
+},
+{
+  "_id": {
+    "$oid": "654e049729ba1b216fd90bd5"
+  },
+  "name": "Ate Rica's Bacsilog",
+  "cuisine": "Filipino",
+  "location": "Agno Food Place, Manila City",
+  "lowest-price": 79,
+  "highest-price": 145,
+  "rating": 4.7
+},
+{
+  "_id": {
+    "$oid": "654e04e529ba1b216fd90bd6"
+  },
+  "name": "Tori Box",
+  "cuisine": "Japanese",
+  "location": "965 Padre Noval St, Sampaloc, Manila, 1015 Metro Manila 1114 Manila City",
+  "lowest-price": 120,
+  "highest-price": 190,
+  "rating": 4.55
+},
+{
+  "_id": {
+    "$oid": "654e058629ba1b216fd90bd7"
+  },
+  "name": "24 Chicken",
+  "cuisine": "Korean",
+  "location": "2339 Taft Ave, Malate, Manila, 1004 Metro Manila",
+  "lowest-price": 20,
+  "highest-price": 515,
+  "rating": 4.9
+},
+{
+  "_id": {
+    "$oid": "654e080d29ba1b216fd90bd8"
+  },
+  "name": "Tinuhog Ni Benny",
+  "cuisine": "Filipino",
+  "location": "879 Dagonoy Street, Malate, Manila 1004 Manila, Philippines",
+  "lowest-price": 17,
+  "highest-price": 990,
+  "rating": 4.6
+}]

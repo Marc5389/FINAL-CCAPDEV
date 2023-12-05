@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/public/css/edit-profile.css">
+</head>
+<body>
+    <div class="menu-bar">
+
+        <div id="header">Tasty Palette Around Metro Manila</div>
+        <div id="date"></div>
+    
+        <ul>
+            <li class="active"><a href="/main">Home</a></li>
+            <li><a>User Profile</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a>Visit Profile</a></li>
+                        <li><a href="/edit-profile">Edit Profile</a></li>
+                        <li><a href="/signout">Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Edit Profile Section -->
+    <div id="edit-profile-container">
+        <h2>Edit Profile</h2>
+        <form action="/edit-profile" method="POST" enctype="multipart/form-data">
+
+            <label for="post-image" class="post-image"><h5 class="form-heading">Choose file</h5></label>
+            <input class="form-control" type="file" id="profile-Image" name="profilePicture" required><br>
+            <!-- Displaying the current username -->
+            <label for="username">Username</label>
+            <input type="text" name="username" value="<%= user.username %>" required><br>
+
+            <!-- Current Password (for confirmation) -->
+            <label for="currentPassword">Current Password</label>
+            <input type="password" name="currentPassword" ><br>
+
+            <!-- New Password -->
+            <label for="newPassword">New Password</label>
+            <input type="password" name="newPassword" ><br>
+
+            <!-- Confirm New Password -->
+            <label for="confirmNewPassword">Confirm New Password</label>
+            <input type="password" name="confirmNewPassword" ><br>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" value="<%= user.email %>" required><br>
+
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio"><%= user.bio %></textarea><br><br>
+
+            <input type="submit" value="Save Changes">
+        </form>
+    </div>
+
+    <!-- Your existing feed content -->
+    <!-- ... -->
+</body>
+</html>

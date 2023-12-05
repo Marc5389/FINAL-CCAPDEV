@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasty Palette Around Manila</title>
+  <link rel="stylesheet" href="./public/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h1>Tasty Palette</h1>
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="/images/frontImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Everything you need to know; <br> New food choices</span>
+          <span class="text-2">Let's explore!</span>
+        </div>
+      </div>
+      <div class="back">
+        <div class="text">
+          <span class="text-1">Everything you need to know; <br> New food choices</span>
+          <span class="text-2">Let's explore!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="forms">
+      <div class="form-content">
+        <div class="login-form">
+          <div class="title">Login</div>
+          <form action="/login" method="POST">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <div id="errorContainer" class="error-container"></div>
+              <div class="button input-box">
+                <button type="submit">Login</button>
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Signup now</label></div>
+            </div>
+          </form>
+        </div>
+        <div class="signup-form">
+          <div class="title">Sign Up</div>
+          <form action="/signup" method="POST">
+            <div class="input-boxes">
+             <div class="input-box">
+               <i class="fas fa-user"></i>
+               <input type="text" id="username" name="username" placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+            <i class="fas fa-envelope"></i>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div id="signupErrorContainer" class="error-container"></div>
+          <div class="button input-box">
+            <button type="submit">Sign Up</button>
+          </div>
+          <div class="text login-text">Already have an account? <label for="flip">Login now</label></div>
+        </div>
+      </form>
+    </div>
+      
+      </div>
+    </div>
+    
+
+<script src="public/js/login.js"></script>
+  <script src="public/js/register.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const loginForm = document.querySelector('.login-form form');
+  
+      loginForm.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Prevent the default form submission
+  
+        const formData = new FormData(loginForm);
+        const formObject = {};
+        formData.forEach((value, key) => {
+          formObject[key] = value;
+        });
+  
+        try {
+          const response = await fetch('/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formObject)
+          });
+  
+          const data = await response.json();
+          console.log(data); // Log the response from the server
+  
+          if (data.status === 'success') {
+            window.location.href = '/main'; // Redirect to main page on successful login
+          } else {
+            const errorMessage = document.createElement('div');
+            errorMessage.textContent = data.message; // Display error message from server
+            errorMessage.classList.add('error-message');
+            document.getElementById('errorContainer').innerHTML = ''; // Clear previous error messages
+            document.getElementById('errorContainer').appendChild(errorMessage);
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          // Handle errors or display a message to the user
+        }
+        return false;
+      });
+    });
+
+    const signupForm = document.querySelector('.signup-form form');
+
+signupForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(signupForm);
+  const formObject = {};
+  formData.forEach((value, key) => {
+    formObject[key] = value;
+  });
+
+  try {
+    const response = await fetch('/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formObject)
+    });
+
+    const data = await response.json();
+    console.log(data);
+
+    if (data.status === 'success') {
+          // Display signup success message and prompt the user to go back to login
+          const signupSuccessMessage = document.createElement('div');
+          signupSuccessMessage.textContent = 'Signup successful! Please go back to login.';
+          signupSuccessMessage.classList.add('success-message');
+          document.getElementById('signupErrorContainer').innerHTML = '';
+          document.getElementById('signupErrorContainer').appendChild(signupSuccessMessage);
+        } else {
+      // Display the error message on the signup form based on the server response
+      const signupErrorMessage = document.createElement('div');
+      signupErrorMessage.textContent = data.message;
+      signupErrorMessage.classList.add('error-message');
+      document.getElementById('signupErrorContainer').innerHTML = '';
+      document.getElementById('signupErrorContainer').appendChild(signupErrorMessage);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    // Handle errors or display a message to the user
+  }
+  return false;
+});
+
+  </script>
+  </body>
+  </html>

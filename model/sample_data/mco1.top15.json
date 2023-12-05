@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "655366e7a192a46a100630d8"
+  },
+  "top15title": "1. Ate Rica's Bacsilog",
+  "top15image": "images/bacsilog.jpg",
+  "top15description": "They sell different types of Filipino breakfast like hotdog, tocino, tapa, bacon, etc. These foods are partnered with egg, rice and their specialty cheese sauce."
+},
+{
+  "_id": {
+    "$oid": "65536858a192a46a100630d9"
+  },
+  "top15title": "2. Angkong",
+  "top15image": "images/angkong.jpg",
+  "top15description": "This food stall sells dim sum and combo meals, especially for students. The specialty of this stall is their homemade siomai which is made from hard work and perseverance in making it tastier."
+},
+{
+  "_id": {
+    "$oid": "655368bfa192a46a100630da"
+  },
+  "top15title": "3. Tori Box",
+  "top15image": "images/toribox.jpg",
+  "top15description": "A Japanese-themed establishment offers cutlets such as Pork Katsu, Fish Katsu, Katsudon, etc. Their specialty is Chicken Karaage with a combination of side dishes like Mojos, Fries, Chips, and Rice. Also, these side dishes have flavors such as BBQ, Sour Cream, Nori, etc."
+},
+{
+  "_id": {
+    "$oid": "655368f6a192a46a100630db"
+  },
+  "top15title": "4. 24 Chicken",
+  "top15image": "images/24chicken.jpg",
+  "top15description": "Fried Chicken is very popular in Korea and now it is in the Philippines. This Korean Fried Chicken is delicious and juicy with various flavors like Snow Cheese, Yangnyeom, Jack Daniels, etc. The prices are budget-friendly, especially for students. "
+},
+{
+  "_id": {
+    "$oid": "65536921a192a46a100630dc"
+  },
+  "top15title": "5. Tinuhog ni Benny",
+  "top15image": "images/tinuhog.jpg",
+  "top15description": "This food stall serves Filipino dishes, particularly grilled foods such as Chicken Inasal, Pork Barbecue, Inihaw na Liempo, etc. Their specialty is selling set meals good for students.  "
+},
+{
+  "_id": {
+    "$oid": "6553693aa192a46a100630dd"
+  },
+  "top15title": "6. Kanto Freestyle",
+  "top15image": "images/kanto.jpg",
+  "top15description": "This restaurant serves Filipino comfort food served ala gourmet style with reasonable prices. Their specialties are Filipino breakfast with a twist like Honey Garlic Chicken, New Zealand Beef Tapa, and Crispy Pork Belly. etc."
+},
+{
+  "_id": {
+    "$oid": "6553695ea192a46a100630de"
+  },
+  "top15title": "7. Illo Japanese Restaurant",
+  "top15image": "images/illo.jpg",
+  "top15description": "A restaurant serves Japanese cuisine at an affordable price. They have different varieties of Japanese food like Katsu, Donburi, Maki, etc. But, their famous food in the menu is Katsu. "
+},
+{
+  "_id": {
+    "$oid": "65536978a192a46a100630df"
+  },
+  "top15title": "8. BabeMike Shawarma",
+  "top15image": "images/babemike.jpg",
+  "top15description": "It is a street meal stall that sells its Filipino-approach shawarma. The shawarma can be paired with rice or in pita. With only 50-60 pesos, they serve the beef finely chopped with onions, cabbage, and tomatoes. The taste is not too sweet and spicy. You can add a sauce like cheese, spicy, etc. "
+},
+{
+  "_id": {
+    "$oid": "65536990a192a46a100630e0"
+  },
+  "top15title": "9. Angel's Corner",
+  "top15image": "images/angelscorner.jpg",
+  "top15description": "This food stall is a popular spot for students especially since the prices are cheap. They sell Filipino merienda like banana cue, Kamote fries, and karioka. "
+},
+{
+  "_id": {
+    "$oid": "655369b8a192a46a100630e1"
+  },
+  "top15title": "10. Old Street Noodle House",
+  "top15image": "images/noodlehouse.jpg",
+  "top15description": "A little noodle shop serves authentic Chinese noodles. The foods are fresh, light, and flavorful. They serve steamed buns and Chinese noodles and their specialty is beef noodles."
+},
+{
+  "_id": {
+    "$oid": "655369d1a192a46a100630e2"
+  },
+  "top15title": "11. Mang Tootz Foodhouse",
+  "top15image": "images/mangtootz.jpg",
+  "top15description": "This food stall started selling Filipino afternoon snacks. Now, the store innovates by selling Filipino dishes and collaborating with other stores for their food tray. Their specialty is Banana Rhuma. "
+},
+{
+  "_id": {
+    "$oid": "655369f2a192a46a100630e3"
+  },
+  "top15title": "12. Santorini",
+  "top15image": "images/santorini.jpg",
+  "top15description": "A go-to restaurant offers an affordable price to students. The foods are authentic Korean which have large sharings that can be shared by two people. "
+},
+{
+  "_id": {
+    "$oid": "65536a1ea192a46a100630e4"
+  },
+  "top15title": "13. Tastes from the Greens",
+  "top15image": "images/milktea.jpg",
+  "top15description": "Milk tea is a very popular refreshment among Filipinos. This store sells different kinds of drinks like smoothies, milk tea, coffee, etc. Also, they have a wide variety of flavors to choose from on the menu. The ingredients used are organic and are homegrown.  "
+},
+{
+  "_id": {
+    "$oid": "65536a3aa192a46a100630e5"
+  },
+  "top15title": "14. Kanto Freestyle",
+  "top15image": "images/kantofreestyle.jpg",
+  "top15description": "Kanto Freestyle may not be very near De La Salle University, but would be worth it to go to. They sell a variety of food cuisines which includes Filipino and American cuisines."
+},
+{
+  "_id": {
+    "$oid": "65536cf8a192a46a100630e6"
+  },
+  "top15title": "El Poco Cantina",
+  "top15image": "images/elpoco.jpg",
+  "top15description": "This restaurant is another one that's not near from the campus but is worth it to go to. This restaurant mainly focuses on Mexican cuisine and a must try from their menu is the QuesaBirria."
+}]

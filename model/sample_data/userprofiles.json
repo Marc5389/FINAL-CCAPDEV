@@ -1,0 +1,26 @@
+{
+  "userProfile": {
+    "username": "Marc",
+    "profilePicture": "/images/Profile.jpeg",
+
+    "bio": {
+      "description": "Loves to do food reviews and taste new types of food. Loves to eat chicken, barbecue. Loves to eat at 24 Chicken and Tinuhog ni Benny"
+    },
+
+    "posts": [
+        "caption": "24 Chicken",
+        "image": "/images/24chicken.jpg",
+        "description": "I was honestly blown away by how well they manage the chicken. I love the chickens there and my favorite flavors there are the Jack Daniels and 24 Cheddar chicken.",
+        "datePosted": "28th Sept. 2023",
+
+        "interactions": {
+          "likes": 0, // You can initialize the number of likes
+
+          "comments": {
+              "author": "Kirin",
+              "comment": "Jack Daniels din favorite ko diyan"
+            }
+        }
+      ]
+  }
+}

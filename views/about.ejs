@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Food Review Feed</title>
+        <link rel="stylesheet" href="/public/css/Major.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="menu-bar">
+            <div id="header">Tasty Palette Around Metro Manila</div>
+
+            <ul>
+                <li class="active"><a href="/main">Home</a></li>
+                <li class="active"><a href="/createpage">Create Post</a></li>
+                <li><a>User Profile</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="/userprofile">Visit Profile</a></li>
+                        <li><a href="/edit-profile">Edit Profile</a></li>
+                        <li><a href="/signout">Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="active"><a href="/about">About</a></li>
+            </ul>
+        </div>
+
+        <div class="aboutus">
+            <div class="about">
+                <h2 class="about-title" > About this Website </h2>
+                <p class="about-description"> In every place that we go to, we all know that food is always what people are looking for. As students, we want to show the different food reviews for each restaurant or the food itself. We want to address what kind of food is worth buying around Manila, especially as students, so we can also handle our money properly.</p>
+            </div>
+
+            <div class=" about">
+                <h2 class="about-title" > NPM Packages used in this website: </h2>
+                <p class="about-description"> 1. Path <br> 2. express <br> 3. express-session <br> 4. mongoose <br>
+                    5. mongodb <br> 6. multer <br> 7. bcrypt </p>
+            </div>
+        </div>
+
+        <script>
+            // Function to display the current date
+          function displayDate() {
+              const dateElement = document.getElementById("date");
+              const currentDate = new Date();
+              const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+              dateElement.textContent = currentDate.toLocaleDateString(undefined, options);
+          }
+        
+          // Call the function when the page loads
+          window.onload = displayDate;
+          </script>
+
+    </bodY>
+</html>

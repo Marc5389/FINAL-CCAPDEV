@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Review Feed</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .liked {
+            color: blue;
+            font-weight: bold;
+        }
+        /* New styles for replies */
+        
+        .reply-comment {
+            margin-left: 20px;
+            /* Indentation to differentiate replies */
+            border-left: 2px solid #000000;
+            /* Border to visually differentiate */
+            padding-left: 10px;
+            /* Padding for better readability */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-bar">
+        <div id="header">Tasty Palette Around Metro Manila</div>
+        <ul>
+            <li><a href="/main">Home</a></li>
+            <li class="active"><a href="/createpage">Create Post</a></li>
+            <li><a>User Profile</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="/userprofile">Visit Profile</a></li>
+                        <li><a href="/edit-profile">Edit Profile</a></li>
+                        <li><a href="/signout">Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="active"><a href="/about">About</a></li>
+        </ul>
+    </div>
+
+    <div class="feed">
+        <form id="postForm" action="createpost" method="post">
+            <h2 class="profile-Name"><%= user.username %></h2>
+            <input type="hidden" name="username" value="<%= user.username %>">
+            <input type="text" id="post-caption" name="caption" placeholder="Restaurant Name"><br>  
+            <label for="post-image" class="post-image"><h5 class="form-heading">Choose file</h5></label>
+            <input class="form-control" type="file" id="post-Image" name="imageFile" required><br>
+            <input type="text" id="post-description" name="description" placeholder="Description"><br>
+            <div class="ratingValue">
+            <label for="ratingValue" class="ratingValue"><h5>Rate it from 1 - 5 (1 - Lowest, 5 - Highest):</h5></label>
+            <select class="rating" name="ratingValue" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+            <input type="date" id="date-posted" name="datePosted" placeholder="Date Posted"><br>
+            <button type="submit" id="submit" name="submit">Submit</button>
+    </div>
+    </form>
+    </div>
+
+</body>
+
+</html>

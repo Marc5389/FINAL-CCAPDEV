@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "654f78abcee37ffdd1e51a2d"
+  },
+  "username": "MichaelJordan23",
+  "password": "oneofthegoats",
+  "bio": "I love Chinese cuisine",
+  "profilepicture": "",
+  "post": "",
+  "email": "michaeljordan23@dlsu.edu.ph"
+},
+{
+  "_id": {
+    "$oid": "654f791ecee37ffdd1e51a2f"
+  },
+  "username": "GordonRamsay123",
+  "password": "it'sraw!",
+  "bio": "I'm the greatest chef in the world!",
+  "profilepicture": "",
+  "post": "",
+  "email": "gordonramsay123@dlsu.edu.ph"
+},
+{
+  "_id": {
+    "$oid": "654f79c2cee37ffdd1e51a31"
+  },
+  "username": "foodratermaster",
+  "password": "masterfoodrater!",
+  "bio": "I rate food for living",
+  "profilepicture": "",
+  "post": "",
+  "email": "foodrater@dlsu.edu.ph"
+},
+{
+  "_id": {
+    "$oid": "654f7a1ecee37ffdd1e51a32"
+  },
+  "username": "MannyPacmanPacquiao",
+  "password": "pacmannyboxer",
+  "bio": "I am a boxer but I still love food.",
+  "profilepicture": "",
+  "post": "",
+  "email": "pacmanboxer@dlsu.edu.ph"
+},
+{
+  "_id": {
+    "$oid": "654f7ac5cee37ffdd1e51a33"
+  },
+  "username": "DonaldMcdonald",
+  "password": "mcdoisbetterthanjollibee",
+  "bio": "Love ko 'to!",
+  "profilepicture": "",
+  "post": "",
+  "email": "donaldmcdonald@dlsu.edu.ph"
+}]

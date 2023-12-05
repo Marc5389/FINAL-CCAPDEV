@@ -1,0 +1,26 @@
+{
+    "_id": {
+        "$oid": "valid_24_character_hex_string_here"
+    },
+    "post-caption": "Delicious Chicken",
+    "post-image": "/images/24chicken.jpg",
+    "post-description": "Sarap ng Jack Daniels, Solid! 5/5.",
+    "rating-title": "How will you rate this store?",
+    "date-posted": "Posted on: 12th Nov 2023",
+    "like": "Like",
+    "comment": "Comment",
+    "comments-display": [
+        {
+            "author": "Lebron James",
+            "comment-text": "Oo, favorite ko talaga yang 24 Chicken!",
+            "comment-like-btn": "Like",
+            "comment-reply-btn": "Reply"
+        },
+        {
+            "author": "Kevin Durant",
+            "comment-text": "Nakakacurious naman to, tara @Stephen Curry",
+            "comment-like-btn": "Like",
+            "comment-reply-btn": "Reply"
+        }
+    ]
+}

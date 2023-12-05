@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Review Feed</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .liked {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* New styles for replies */
+        .reply-comment {
+            margin-left: 20px;
+            /* Indentation to differentiate replies */
+            border-left: 2px solid #000000;
+            /* Border to visually differentiate */
+            padding-left: 10px;
+            /* Padding for better readability */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <div id="header">Tasty Palette Around Metro Manila</div>
+        <div id="date"></div>
+        <ul>
+            <li class="active"><a href="/main">Home</a></li>
+            <li><a>Sort</a>
+                <div class="submenu">
+               <ul>
+                    <li><a href="/main?sortDate=asc">Sort by Date Ascending</a></li>
+                    <li><a href="/main?sortDate=desc">Sort by Date Descending</a></li>
+                    <!-- <li><a href="/main?sortRating=asc">Sort by Rating Ascending</a></li>
+                    <li><a href="/main?sortRating=desc">Sort by Rating Descending</a></li> -->
+                </ul>
+            </div>
+            </li>
+            <li class="active"><a href="/createpage">Create Post</a></li>
+            <li><a>User Profile</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="/userprofile">Visit Profile</a></li>
+                        <li><a href="/edit-profile">Edit Profile</a></li>
+                        <li><a href="/signout">Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="active"><a href="/about">About</a></li>
+        </ul>
+    </div>
+  
+
+    <div class="feed">
+        <% if (message) { %>
+        <div class="message" style="text-align: center; color: green; font-size: larger;">
+            <%= message %>
+        </div>
+        <% } %>
+
+        <% posts.forEach(function(post) { %>
+        <div class="post">
+            <h3>Posted by: <%= post.username %></h3>
+            <h2 class="post-caption">
+                <%= post.caption %>
+            </h2>
+            <img class="post-image" src="/images/<%= post.imageFile %>" alt="Posted Image">
+            <p class="post-description">
+                <%= post.description %>
+            </p>
+            <div class="ratingValue">
+                <label for="ratingValue" name="ratingValue" class="ratingValue">Rating: <%= post.ratingValue %>/5</label>
+            </div>
+            <p>Posted on: <span class="date-posted"><%= new Date(post.datePosted).toLocaleDateString('en-US', { dateStyle: 'medium' }) %></span></p>
+
+            <div class="postlike">
+                <p><strong>Like Count:</strong> <%= post.likeCount %></p>
+                <!-- ... other post details -->
+                <form action="/like/<%= post._id %>" method="POST">
+                    <button type="submit">Like</button>
+                </form>
+            </div>
+
+            <!-- Display comments for this post -->
+            <% post.comments.forEach(function(comment) { %>
+            <div class="comment">
+                <p class="comment-username"><%= comment.cUsername %></p>
+                <p><%= comment.comment %></p>
+            </div>
+            <% }); %>
+
+            <!-- Comment form -->
+            <div class="comment">
+                <h3>Leave a Comment</h3>
+                <form action="/commentpost" method="POST">
+                    <input type="hidden" name="postId" value="<%= post._id %>">
+                    <textarea name="comment" placeholder="Write your comment here..." required></textarea>
+                    <input type="submit" value="Comment">
+                </form>
+            </div>
+        </div>
+        <% }); %>
+    </div>
+    <a href="#header" class="back-to-top">Back to Top</a>
+</body>
+
+</html>
