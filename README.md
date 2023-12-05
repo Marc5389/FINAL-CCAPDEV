@@ -23,3 +23,5 @@ To get started with the Tasty Palette Around Metro Manila project, follow these 
 3. Start the server: **node server.js**
 
 4. Open a web browser and go to **http://localhost:3000/**
+
+_The website is also hosted at: https://tasty-palette.onrender.com_
